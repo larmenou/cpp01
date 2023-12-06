@@ -6,7 +6,7 @@
 /*   By: larmenou <larmenou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/01 10:50:40 by larmenou          #+#    #+#             */
-/*   Updated: 2023/12/01 11:33:17 by larmenou         ###   ########.fr       */
+/*   Updated: 2023/12/04 10:56:19 by larmenou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 Zombie::Zombie(std::string name)
 {
 	this->_name = name;
-	announce();
 	return ;
 }
 

@@ -6,7 +6,7 @@
 /*   By: larmenou <larmenou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/01 11:35:24 by larmenou          #+#    #+#             */
-/*   Updated: 2023/12/01 11:55:35 by larmenou         ###   ########.fr       */
+/*   Updated: 2023/12/04 10:53:34 by larmenou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,5 @@
 
 void randomChump( std::string name )
 {
-	Zombie z;
-
-	z = Zombie(name);
+	Zombie z = Zombie(name);
 }

@@ -6,12 +6,15 @@
 /*   By: larmenou <larmenou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/01 10:51:47 by larmenou          #+#    #+#             */
-/*   Updated: 2023/12/01 11:36:55 by larmenou         ###   ########.fr       */
+/*   Updated: 2023/12/04 10:58:10 by larmenou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <iostream>
-#include <string>
+#ifndef ZOMBIE_HPP
+# define ZOMBIE_HPP
+
+# include <iostream>
+# include <string>
 
 class Zombie
 {
@@ -26,3 +29,5 @@ class Zombie
 
 Zombie* newZombie( std::string name );
 void 	randomChump( std::string name );
+
+#endif
