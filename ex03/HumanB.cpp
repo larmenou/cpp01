@@ -6,7 +6,7 @@
 /*   By: larmenou <larmenou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/06 12:36:10 by larmenou          #+#    #+#             */
-/*   Updated: 2023/12/06 15:09:40 by larmenou         ###   ########.fr       */
+/*   Updated: 2023/12/06 15:29:36 by larmenou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,17 +23,17 @@ HumanB::~HumanB()
 	return ;
 }
 
-void HumanB::setWeapon(Weapon weapon)
+void HumanB::setWeapon(Weapon &weapon)
 {
-	this->_weapon = weapon;
+	this->_weapon = &weapon;
 	return ;
 }
 
 void HumanB::attack()
 {
-	if (this->_weapon.getType().length() == 0)
-		std::cout << this->_name << " attacks with their fists" << std::endl;
+	if (_weapon->getType().length() == 0)
+		std::cout << this->_name << " attacks with their head" << std::endl;
 	else
-		std::cout << this->_name << " attacks with their " << this->_weapon.getType() << std::endl;
+		std::cout << this->_name << " attacks with their " << _weapon->getType() << std::endl;
 	return ;
 }

@@ -6,7 +6,7 @@
 /*   By: larmenou <larmenou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/06 12:36:01 by larmenou          #+#    #+#             */
-/*   Updated: 2023/12/06 15:12:27 by larmenou         ###   ########.fr       */
+/*   Updated: 2023/12/06 15:30:02 by larmenou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,8 @@ int main()
 		HumanA bob("Bob", club);
 		bob.attack();
 		club.setType("some other type of club");
-		bob.attack();club.setType("");
+		bob.attack();
+		club.setType("");
 		bob.attack();
 	}
 	{
@@ -30,6 +31,8 @@ int main()
 		jim.setWeapon(club);
 		jim.attack();
 		club.setType("some other type of club");
+		jim.attack();
+		club.setType("");
 		jim.attack();
 	}
 	return (0);
