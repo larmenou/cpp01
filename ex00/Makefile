@@ -1,5 +1,6 @@
 CPP			:= c++
 CFLAGS		:= -g -Wall -Wextra -Werror -std=c++98
+OBJFLAGS := -c
 
 NAME		:= zombie
 
@@ -12,6 +13,9 @@ SRCS		:= $(addsuffix .cpp, $(SRCS_F))
 OBJ			:= $(addsuffix .o, $(SRCS_F))
 
 all: 		$(NAME)
+
+%.o: %.cpp
+				$(CPP) $(CPPFLAGS) $(OBJFLAGS) $< -o $@
 
 $(NAME): 	$(OBJ)
 				$(CPP) $(CFLAGS) $(OBJ) -o $(NAME)

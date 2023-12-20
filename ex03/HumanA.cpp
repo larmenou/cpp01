@@ -6,7 +6,7 @@
 /*   By: larmenou <larmenou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/06 12:36:05 by larmenou          #+#    #+#             */
-/*   Updated: 2023/12/06 15:20:47 by larmenou         ###   ########.fr       */
+/*   Updated: 2023/12/20 11:43:25 by larmenou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,7 @@ HumanA::~HumanA()
 void HumanA::attack()
 {
 	if (this->_weapon.getType().length() == 0)
-		std::cout << this->_name << " attacks with their default weapon" << std::endl;
-	else
-		std::cout << this->_name << " attacks with their " << this->_weapon.getType() << std::endl;
+		this->_weapon.setType("default weapon");
+	std::cout << this->_name << " attacks with their " << this->_weapon.getType() << std::endl;
 	return ;
 }

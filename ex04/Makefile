@@ -1,5 +1,6 @@
 CPP			:= c++
 CPPFLAGS	:= -g -Wall -Wextra -Werror -std=c++98
+OBJFLAGS := -c
 
 NAME		:= sed
 
@@ -10,6 +11,9 @@ SRCS		:= $(addsuffix .cpp, $(SRCS_F))
 OBJ			:= $(addsuffix .o, $(SRCS_F))
 
 all: 		$(NAME)
+
+%.o: %.cpp
+				$(CPP) $(CPPFLAGS) $(OBJFLAGS) $< -o $@
 
 $(NAME): 	$(OBJ)
 				$(CPP) $(CPPFLAGS) $(OBJ) -o $(NAME)
