@@ -6,7 +6,7 @@
 /*   By: larmenou <larmenou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/06 12:36:01 by larmenou          #+#    #+#             */
-/*   Updated: 2024/01/08 09:51:54 by larmenou         ###   ########.fr       */
+/*   Updated: 2024/01/08 11:50:29 by larmenou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,8 @@ int main()
 		club.setType("some other type of club");
 		jim.attack();
 		club.setType("");
+		jim.attack();
+		jim.setWeapon(NULL);
 		jim.attack();
 	}
 	return (0);

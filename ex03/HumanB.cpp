@@ -6,7 +6,7 @@
 /*   By: larmenou <larmenou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/06 12:36:10 by larmenou          #+#    #+#             */
-/*   Updated: 2024/01/08 09:45:00 by larmenou         ###   ########.fr       */
+/*   Updated: 2024/01/08 11:49:25 by larmenou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,19 @@
 HumanB::HumanB(std::string name)
 {
 	this->_name = name;
+	this->_weapon = NULL;
+	return ;
+}
+
+HumanB::HumanB()
+{
+	this->_name = "default";
+	this->_weapon = NULL;
 	return ;
 }
 
 HumanB::~HumanB()
 {
-	this->_name = "default";
-	this->_weapon = NULL;
 	return ;
 }
 
@@ -33,9 +39,9 @@ void HumanB::setWeapon(Weapon *weapon)
 
 void HumanB::attack()
 {
-	if (_weapon->getType().length() == 0)
+	if (this->_weapon == NULL)
 		std::cout << this->_name << " attacks with their head" << std::endl;
 	else
-		std::cout << this->_name << " attacks with their " << _weapon->getType() << std::endl;
+		std::cout << this->_name << " attacks with their " << this->_weapon->getType() << std::endl;
 	return ;
 }
