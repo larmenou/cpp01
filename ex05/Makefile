@@ -1,5 +1,5 @@
 CPP			:= c++
-CPPFLAGS	:= -g -Wall -Wextra -Werror -std=c++98
+CPPFLAGS	:= -Wall -Wextra -Werror -std=c++98
 OBJFLAGS := -c
 
 NAME		:= harl

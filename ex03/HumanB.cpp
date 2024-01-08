@@ -6,7 +6,7 @@
 /*   By: larmenou <larmenou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/06 12:36:10 by larmenou          #+#    #+#             */
-/*   Updated: 2023/12/20 11:24:46 by larmenou         ###   ########.fr       */
+/*   Updated: 2024/01/08 09:45:00 by larmenou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,12 +20,14 @@ HumanB::HumanB(std::string name)
 
 HumanB::~HumanB()
 {
+	this->_name = "default";
+	this->_weapon = NULL;
 	return ;
 }
 
-void HumanB::setWeapon(Weapon &weapon)
+void HumanB::setWeapon(Weapon *weapon)
 {
-	this->_weapon = &weapon;
+	this->_weapon = weapon;
 	return ;
 }
 

@@ -6,7 +6,7 @@
 /*   By: larmenou <larmenou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/06 12:36:15 by larmenou          #+#    #+#             */
-/*   Updated: 2023/12/06 14:31:16 by larmenou         ###   ########.fr       */
+/*   Updated: 2024/01/08 09:51:47 by larmenou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,8 +34,7 @@ void Weapon::setType(std::string type)
 	return ;
 }
 
-std::string const & Weapon::getType()
+std::string const Weapon::getType()
 {
-	std::string const &type = this->_type;
-	return (type);
+	return (this->_type);
 }

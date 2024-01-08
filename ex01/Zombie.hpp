@@ -6,7 +6,7 @@
 /*   By: larmenou <larmenou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/01 10:51:47 by larmenou          #+#    #+#             */
-/*   Updated: 2023/12/06 09:43:56 by larmenou         ###   ########.fr       */
+/*   Updated: 2024/01/08 09:27:19 by larmenou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ class Zombie
 		Zombie(std::string name);
 		~Zombie(void);
 		void announce(void) const;
+		void setName(std::string name);
 
 	private:
 		std::string _name;

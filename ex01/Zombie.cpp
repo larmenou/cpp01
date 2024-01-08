@@ -6,7 +6,7 @@
 /*   By: larmenou <larmenou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/01 10:50:40 by larmenou          #+#    #+#             */
-/*   Updated: 2023/12/06 11:18:48 by larmenou         ###   ########.fr       */
+/*   Updated: 2024/01/08 09:29:14 by larmenou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 Zombie::Zombie()
 {
+	this->_name = "default";
 	return ;
 }
 
@@ -31,5 +32,11 @@ Zombie::~Zombie()
 void Zombie::announce(void) const
 {
 	std::cout << this->_name << ": BraiiiiiiinnnzzzZ..." << std::endl;
+	return ;
+}
+
+void Zombie::setName(std::string name)
+{
+	this->_name = name;
 	return ;
 }

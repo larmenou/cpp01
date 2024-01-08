@@ -6,7 +6,7 @@
 /*   By: larmenou <larmenou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/06 11:18:34 by larmenou          #+#    #+#             */
-/*   Updated: 2023/12/06 11:18:52 by larmenou         ###   ########.fr       */
+/*   Updated: 2024/01/08 09:26:45 by larmenou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ Zombie *zombieHorde(int N, std::string name)
 	
 	for (int i = 0; i < N; i++)
 	{
-		tab[i] = Zombie(name);
+		tab[i].setName(name);
 	}
 	return (tab);
 }
